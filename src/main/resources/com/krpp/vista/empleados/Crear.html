@@ -1,0 +1,61 @@
+<wicket:extend>
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Empleados</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Agregar Empleado
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form" wicket:id="form">
+                                        <div class="form-group">
+                                            <label>Nro de Cedula</label>
+                                            <input wicket:id="nroCedula" type="text" class="form-control"
+                                                   placeholder="Nro de Cedula...">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Nombre Completo</label>
+                                            <input wicket:id="nombreCompleto" type="text" class="form-control"
+                                                   placeholder="Nombre...">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Estado Civil</label>
+                                            <input wicket:id="estadoCivil" type="text" class="form-control"
+                                                   placeholder="S/C...">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <input wicket:id="sexo" type="text" class="form-control"
+                                                   placeholder="M/F...">
+                                        </div>
+
+
+                                        <button wicket:id="submit" type="submit" class="btn btn-default">Guardar
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</wicket:extend>

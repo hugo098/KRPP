@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07-dic-2018 20:06:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.krpp.modelo.Vehiculo" optimistic-lock="version" table="vehiculo">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="anho" type="string">
+      <column name="anho"/>
+    </property>
+    <property name="chapa" type="string">
+      <column name="chapa"/>
+    </property>
+    <property name="color" type="string">
+      <column name="color"/>
+    </property>
+    <property name="empleadoId" type="java.lang.Integer">
+      <column name="empleado_id"/>
+    </property>
+    <property name="modeloId" type="java.lang.Integer">
+      <column name="modelo_id"/>
+    </property>
+  </class>
+</hibernate-mapping>

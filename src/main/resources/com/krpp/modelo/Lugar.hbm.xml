@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07-dic-2018 20:06:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.krpp.modelo.modelosMapeados.LugarModel" optimistic-lock="version" table="lugar">
+    <id name="idLugar" type="int">
+      <column name="id_lugar"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="descripcion" type="string">
+      <column length="50" name="descripcion" not-null="true"/>
+    </property>
+    <property name="estado" type="string">
+      <column length="20" name="estado" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

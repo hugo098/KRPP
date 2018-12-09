@@ -1,0 +1,82 @@
+<wicket:extend>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <center>
+                        <h1>Empleados
+                            <button wicket:id="Empleado.Crear" type="button" tooltip="Agregar Empleado" tooltip-placement="right"
+                                    class="btn btn-sm btn-success">
+                                <i class="fa fa-plus-circle fa-fw"></i>
+                            </button>
+                        </h1>
+                    </center>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Listado de Empleados
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover"
+                                   id="dataTables-example">
+                                <thead>
+                                <tr>
+                                    <th>#ID</th>
+                                    <th>Nro de Cedula</th>
+                                    <th>Nombre</th>
+                                    <th>Fecha de Nacimiento</th>
+                                    <th>Estado Civil</th>
+                                    <th>Sexo</th>
+                                    <th>Accion</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr wicket:id="empleados">
+                                    <td wicket:id="idEmpleado"></td>
+                                    <td wicket:id="nroCedula"></td>
+                                    <td wicket:id="nombreCompleto"></td>
+                                    <td wicket:id="fechaNacimiento"></td>
+                                    <td wicket:id="estadoCivil"></td>
+                                    <td wicket:id="sexo"></td>
+                                    <td>
+                                        <button type="button" wicket:id="editLink"
+                                                class="btn btn-sm btn-info">
+                                            Editar <i class="fa fa-edit fa-fw"></i>
+                                        </button>
+                                        <button type="button" wicket:id="deleteLink"
+                                                class="btn btn-sm btn-danger">
+                                            Eliminar <i class="fa fa-trash fa-fw"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+
+
+                            </table>
+
+
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+
+
+</wicket:extend>

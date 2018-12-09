@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07-dic-2018 20:06:02 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.krpp.modelo.modelosMapeados.EstacionamientoModel" optimistic-lock="version" table="estacionamiento">
+    <id name="idEstacionamiento" type="int">
+      <column name="id_estacionamiento"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="idVehiculo" type="int">
+      <column name="id_vehiculo" not-null="true"/>
+    </property>
+    <property name="idLugar" type="int">
+      <column name="id_lugar" not-null="true"/>
+    </property>
+    <property name="estado" type="string">
+      <column length="20" name="estado" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

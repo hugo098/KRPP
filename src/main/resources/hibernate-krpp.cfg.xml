@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory name="HibernateSessionFactory">
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/KRPP</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">hd250616</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <mapping resource="com/krpp/modelo/Empleado.hbm.xml"/>
+    <mapping resource="com/krpp/modelo/Estacionamiento.hbm.xml"/>
+    <mapping resource="com/krpp/modelo/Lugar.hbm.xml"/>
+    <mapping resource="com/krpp/modelo/Modelo.hbm.xml"/>
+    <mapping resource="com/krpp/modelo/Marca.hbm.xml"/>
+    <mapping resource="com/krpp/modelo/Vehiculo.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
